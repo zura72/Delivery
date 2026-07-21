@@ -1,0 +1,32 @@
+{
+  "NIB.pdf": {
+    "mtime": 1784558960.107391,
+    "ast_hash": "20144ee33e066715dceeecb6f29f698d",
+    "semantic_hash": "20144ee33e066715dceeecb6f29f698d"
+  },
+  "Notaris.pdf": {
+    "mtime": 1784558905.8052216,
+    "ast_hash": "841df43ddf2a3b9317c2307f88c63bf9",
+    "semantic_hash": "841df43ddf2a3b9317c2307f88c63bf9"
+  },
+  "SK.pdf": {
+    "mtime": 1784558927.6330948,
+    "ast_hash": "4e92d0804f344c045ecd6ca3359ade83",
+    "semantic_hash": "4e92d0804f344c045ecd6ca3359ade83"
+  },
+  "perseroan.pdf": {
+    "mtime": 1784558944.7009299,
+    "ast_hash": "0fc7dd66ffeb2f4ad1ecedb52e07f37c",
+    "semantic_hash": "0fc7dd66ffeb2f4ad1ecedb52e07f37c"
+  },
+  "favicon.svg": {
+    "mtime": 1783525508.9970157,
+    "ast_hash": "c30474222a0c632c4b441cab700c4c31",
+    "semantic_hash": "c30474222a0c632c4b441cab700c4c31"
+  },
+  "logo-web.jpg": {
+    "mtime": 1783563468.335044,
+    "ast_hash": "ab0467fc2dbe41a94e89537328d844ee",
+    "semantic_hash": "ab0467fc2dbe41a94e89537328d844ee"
+  }
+}

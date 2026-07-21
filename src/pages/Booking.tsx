@@ -173,7 +173,7 @@ export function Booking() {
       </div>
 
       {/* Header */}
-      <header className="mx-auto flex max-w-4xl items-center justify-between px-4 py-5 sm:px-6">
+      <header className="safe-top mx-auto flex max-w-4xl items-center justify-between px-4 py-5 sm:px-6">
         <Logo />
         <div className="flex items-center gap-2">
           <ThemeToggle />
@@ -186,7 +186,7 @@ export function Booking() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-4xl px-4 pb-24 sm:px-6">
+      <main className="pb-safe mx-auto max-w-4xl px-4 sm:px-6">
         {bookingCode ? (
           <SuccessScreen
             code={bookingCode}
@@ -334,7 +334,7 @@ export function Booking() {
                           value={data.date}
                           min={new Date().toISOString().slice(0, 10)}
                           onChange={(e) => set('date', e.target.value)}
-                          className="w-full bg-transparent text-sm font-medium text-white outline-none [color-scheme:dark]"
+                          className="w-full bg-transparent text-sm font-medium text-white outline-none"
                         />
                       </Field>
                       <Field
@@ -346,7 +346,7 @@ export function Booking() {
                           type="time"
                           value={data.time}
                           onChange={(e) => set('time', e.target.value)}
-                          className="w-full bg-transparent text-sm font-medium text-white outline-none [color-scheme:dark]"
+                          className="w-full bg-transparent text-sm font-medium text-white outline-none"
                         />
                       </Field>
                     </div>
@@ -444,7 +444,7 @@ export function Booking() {
                         <select
                           value={data.cargoType}
                           onChange={(e) => set('cargoType', e.target.value)}
-                          className="w-full bg-transparent text-sm font-medium text-white outline-none [color-scheme:dark]"
+                          className="w-full bg-transparent text-sm font-medium text-white outline-none"
                         >
                           {cargoTypes.map((c) => (
                             <option key={c} value={c} className="bg-ink-800">

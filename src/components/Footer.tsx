@@ -1,18 +1,36 @@
-import { Instagram, Twitter, Facebook, Mail, Phone } from 'lucide-react'
+import { Instagram, Twitter, Facebook, Mail, Phone, MapPin } from 'lucide-react'
 import { Logo } from './Logo'
 
 const cols = [
   {
     title: 'Layanan',
-    links: ['Pickup & Truk On-Demand', 'Kargo Antar Kota', 'Pindahan', 'Multi-Titik', 'Sewa Borongan'],
+    links: [
+      { label: 'Angkutan Barang Umum', href: '#layanan' },
+      { label: 'Angkutan Barang Khusus', href: '#layanan' },
+      { label: 'Layanan Kurir', href: '#layanan' },
+      { label: 'Sewa Kendaraan & Alat', href: '#layanan' },
+      { label: 'Pergudangan', href: '#layanan' },
+    ],
   },
   {
     title: 'Perusahaan',
-    links: ['Tentang Kami', 'Karier', 'Blog', 'Mitra Kurir', 'Kontak'],
+    links: [
+      { label: 'Tentang Kami', href: '#/profil' },
+      { label: 'Legalitas & Dokumen', href: '#/profil' },
+      { label: 'Karier', href: '#' },
+      { label: 'Mitra Sopir', href: '#' },
+      { label: 'Kontak', href: '#' },
+    ],
   },
   {
     title: 'Bantuan',
-    links: ['Pusat Bantuan', 'Cara Kirim', 'Klaim Asuransi', 'Syarat & Ketentuan', 'Kebijakan Privasi'],
+    links: [
+      { label: 'Pusat Bantuan', href: '#' },
+      { label: 'Cara Kirim', href: '#cara-kerja' },
+      { label: 'Klaim Asuransi', href: '#' },
+      { label: 'Syarat & Ketentuan', href: '#' },
+      { label: 'Kebijakan Privasi', href: '#' },
+    ],
   },
 ]
 
@@ -24,8 +42,12 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
-              Layanan ekspedisi on-demand dengan armada pickup &amp; truk yang
-              menghubungkan lokasi A ke B — cepat, aman, dan terlacak.
+              PT Putra Prasetyo Trans — ekspedisi &amp; transportasi barang berbadan
+              hukum resmi. Angkutan barang, kurir, sewa armada &amp; pergudangan.
+            </p>
+            <p className="mt-3 flex items-start gap-1.5 text-xs leading-relaxed text-slate-500">
+              <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0" /> Perumahan Batu Putih No. 31,
+              Kel. Harjamukti, Kec. Cimanggis, Kota Depok, Jawa Barat 16454
             </p>
             <div className="mt-5 flex gap-2.5">
               {[Instagram, Twitter, Facebook].map((Icon, i) => (
@@ -45,9 +67,9 @@ export function Footer() {
               <h4 className="text-sm font-bold text-white">{c.title}</h4>
               <ul className="mt-4 space-y-2.5">
                 {c.links.map((l) => (
-                  <li key={l}>
-                    <a href="#" className="text-sm text-slate-400 transition-colors hover:text-white">
-                      {l}
+                  <li key={l.label}>
+                    <a href={l.href} className="text-sm text-slate-400 transition-colors hover:text-white">
+                      {l.label}
                     </a>
                   </li>
                 ))}
@@ -61,11 +83,11 @@ export function Footer() {
             © {new Date().getFullYear()} PUTRA PRASETYO TRANS. Dibuat dengan ❤️ di Indonesia.
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-slate-400">
-            <a href="mailto:halo@putraprasetyotrans.id" className="inline-flex items-center gap-1.5 hover:text-white">
-              <Mail className="h-3.5 w-3.5" /> halo@putraprasetyotrans.id
+            <a href="mailto:ptputraprasetyo@gmail.com" className="inline-flex items-center gap-1.5 hover:text-white">
+              <Mail className="h-3.5 w-3.5" /> ptputraprasetyo@gmail.com
             </a>
-            <a href="tel:+622150001000" className="inline-flex items-center gap-1.5 hover:text-white">
-              <Phone className="h-3.5 w-3.5" /> +62 21 5000 1000
+            <a href="tel:+6281912715758" className="inline-flex items-center gap-1.5 hover:text-white">
+              <Phone className="h-3.5 w-3.5" /> 0819-1271-5758
             </a>
           </div>
         </div>

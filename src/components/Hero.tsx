@@ -42,7 +42,7 @@ export function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-slate-200 utility-blur"
           >
             <span className="flex h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_10px] shadow-emerald-400" />
-            Armada pickup &amp; truk siap di 500+ kota
+            Ekspedisi resmi berbadan hukum PT
           </motion.a>
 
           <motion.h1

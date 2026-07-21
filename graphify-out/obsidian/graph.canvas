@@ -1,0 +1,720 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Perizinan OSS & NIB",
+      "x": 0,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_nib_bsre_bssn",
+      "type": "file",
+      "file": "BSrE-BSSN (Balai Sertifikasi Elektronik).md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_79110",
+      "type": "file",
+      "file": "KBLI 79110 Aktivitas Agen Perjalanan.md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_95311",
+      "type": "file",
+      "file": "KBLI 95311 Reparasi Mobil.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_alamat_kedudukan_depok",
+      "type": "file",
+      "file": "Kedudukan Perumahan Batu Putih No. 31, Harjamukti, Cimanggis, Kota Depok, Jawa Barat 16454.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_nib_kementerian_investasi_bkpm",
+      "type": "file",
+      "file": "Menteri Investasi dan Hilirisasi  Kepala BKPM.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_nib_nomor_induk_berusaha_1907260010681",
+      "type": "file",
+      "file": "NIB 1907260010681 (Perizinan Berusaha Berbasis Risiko, terbit 19 Juli 2026).md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_nib_sistem_oss",
+      "type": "file",
+      "file": "Sistem OSS (Online Single Submission).md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_nib_uu_6_2023_cipta_kerja",
+      "type": "file",
+      "file": "UU Nomor 6 Tahun 2023 (Cipta Kerja).md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Akta Pendirian & Pengurus",
+      "x": 740,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "2"
+    },
+    {
+      "id": "n_notaris_akta_pendirian_117",
+      "type": "file",
+      "file": "Akta Pendirian PT Nomor 117 tanggal 17 Juli 2026.md",
+      "x": 760,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_sk_daftar_perseroan_ahu_0166666",
+      "type": "file",
+      "file": "Daftar Perseroan Nomor AHU-0166666.AH.01.11.TAHUN 2026.md",
+      "x": 960,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_notaris_fahri_ramadhan",
+      "type": "file",
+      "file": "Fahri Ramadhan (Direktur, 700 lembar saham).md",
+      "x": 1160,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_sk_kementerian_hukum",
+      "type": "file",
+      "file": "Kementerian Hukum RI (Ditjen AHU  Kemenkumham).md",
+      "x": 760,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_notaris_lukman_alfiansyah",
+      "type": "file",
+      "file": "Lukman Alfiansyah (Komisaris, 300 lembar saham).md",
+      "x": 960,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_notaris_tunjung_widhi_wasesa_suwadji",
+      "type": "file",
+      "file": "Notaris Tunjung Widhi Wasesa Suwadji, S.H., M.Kn. (Kab. Semarang).md",
+      "x": 1160,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_nib_pt_putra_prasetyo_trans",
+      "type": "file",
+      "file": "PT Putra Prasetyo Trans.md",
+      "x": 760,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_sk_kepmen_ahu_0056811",
+      "type": "file",
+      "file": "SK Menteri Hukum AHU-0056811.AH.01.01.TAHUN 2026 (17 Juli 2026).md",
+      "x": 960,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Bidang Usaha (KBLI)",
+      "x": 1480,
+      "y": 0,
+      "width": 660,
+      "height": 420,
+      "color": "3"
+    },
+    {
+      "id": "n_perseroan_data_perseroan",
+      "type": "file",
+      "file": "Data Perseroan  Pengesahan Pendirian (profil SABH).md",
+      "x": 1500,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_49231",
+      "type": "file",
+      "file": "KBLI 49231 Angkutan Bermotor untuk Barang Umum.md",
+      "x": 1700,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_49232",
+      "type": "file",
+      "file": "KBLI 49232 Angkutan Bermotor untuk Barang Khusus.md",
+      "x": 1900,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_49295",
+      "type": "file",
+      "file": "KBLI 49295 Angkutan Sewa.md",
+      "x": 1500,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_52101",
+      "type": "file",
+      "file": "KBLI 52101 Pengelola Gudang Sistem Resi Gudang.md",
+      "x": 1700,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_53200",
+      "type": "file",
+      "file": "KBLI 53200 Aktivitas Kurir.md",
+      "x": 1900,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_77100",
+      "type": "file",
+      "file": "KBLI 77100 Penyewaan dan Sewa Guna Usaha Kendaraan Bermotor.md",
+      "x": 1500,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Logo & Identitas Brand",
+      "x": 0,
+      "y": 500,
+      "width": 660,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_logo_web_arrow_motif",
+      "type": "file",
+      "file": "Forward Arrow  Route Motif.md",
+      "x": 20,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_web_blue_branding",
+      "type": "file",
+      "file": "Navy and Steel-Blue Brand Palette.md",
+      "x": 220,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_web_p2t_monogram",
+      "type": "file",
+      "file": "P2T Monogram.md",
+      "x": 420,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_web_putra_prasetyo_trans",
+      "type": "file",
+      "file": "Putra Prasetyo Trans (Company).md",
+      "x": 20,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_web",
+      "type": "file",
+      "file": "Putra Prasetyo Trans Web Logo.md",
+      "x": 220,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_logo_web_transport_delivery",
+      "type": "file",
+      "file": "Transport  Delivery Services.md",
+      "x": 420,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Favicon & Ikon Aplikasi",
+      "x": 740,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_favicon_blue_gradient_palette",
+      "type": "file",
+      "file": "Blue-Cyan Gradient Palette.md",
+      "x": 760,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_favicon_delivery_motif",
+      "type": "file",
+      "file": "Delivery Arrow Motif.md",
+      "x": 960,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_favicon_p2t_brand",
+      "type": "file",
+      "file": "P2T Brand Identity.md",
+      "x": 760,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_favicon_p2t_logo_mark",
+      "type": "file",
+      "file": "P2T Favicon Logo Mark.md",
+      "x": 960,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Anggaran Dasar & KBLI Konstruksi",
+      "x": 1480,
+      "y": 500,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_notaris_anggaran_dasar",
+      "type": "file",
+      "file": "Anggaran Dasar Perseroan (Pasal 1-20).md",
+      "x": 1500,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_43905",
+      "type": "file",
+      "file": "KBLI 43905 Penyewaan Alat Konstruksi dengan Operator.md",
+      "x": 1700,
+      "y": 580,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_perseroan_kbli_77393",
+      "type": "file",
+      "file": "KBLI 77393 Penyewaan dan Sewa Guna Usaha Mesin dan Peralatan Konstruksi dan Teknik Sipil.md",
+      "x": 1500,
+      "y": 660,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_nib_pt_putra_prasetyo_trans_nib_nomor_induk_berusaha_1907260010681",
+      "fromNode": "n_nib_pt_putra_prasetyo_trans",
+      "toNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_pt_putra_prasetyo_trans_notaris_akta_pendirian_117",
+      "fromNode": "n_nib_pt_putra_prasetyo_trans",
+      "toNode": "n_notaris_akta_pendirian_117",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_pt_putra_prasetyo_trans_perseroan_data_perseroan",
+      "fromNode": "n_nib_pt_putra_prasetyo_trans",
+      "toNode": "n_perseroan_data_perseroan",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_pt_putra_prasetyo_trans_sk_kepmen_ahu_0056811",
+      "fromNode": "n_nib_pt_putra_prasetyo_trans",
+      "toNode": "n_sk_kepmen_ahu_0056811",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_nib_kementerian_investasi_bkpm",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_nib_kementerian_investasi_bkpm",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_nib_bsre_bssn",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_nib_bsre_bssn",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_nib_sistem_oss",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_nib_sistem_oss",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_nib_uu_6_2023_cipta_kerja",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_nib_uu_6_2023_cipta_kerja",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_perseroan_alamat_kedudukan_depok",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_perseroan_alamat_kedudukan_depok",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_perseroan_kbli_77100",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_perseroan_kbli_77100",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_perseroan_kbli_77393",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_perseroan_kbli_77393",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_perseroan_kbli_79110",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_perseroan_kbli_79110",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_nib_nomor_induk_berusaha_1907260010681_perseroan_kbli_95311",
+      "fromNode": "n_nib_nomor_induk_berusaha_1907260010681",
+      "toNode": "n_perseroan_kbli_95311",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_akta_pendirian_117_notaris_anggaran_dasar",
+      "fromNode": "n_notaris_akta_pendirian_117",
+      "toNode": "n_notaris_anggaran_dasar",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_akta_pendirian_117_notaris_fahri_ramadhan",
+      "fromNode": "n_notaris_akta_pendirian_117",
+      "toNode": "n_notaris_fahri_ramadhan",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_akta_pendirian_117_notaris_lukman_alfiansyah",
+      "fromNode": "n_notaris_akta_pendirian_117",
+      "toNode": "n_notaris_lukman_alfiansyah",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_akta_pendirian_117_notaris_tunjung_widhi_wasesa_suwadji",
+      "fromNode": "n_notaris_akta_pendirian_117",
+      "toNode": "n_notaris_tunjung_widhi_wasesa_suwadji",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_akta_pendirian_117_perseroan_data_perseroan",
+      "fromNode": "n_notaris_akta_pendirian_117",
+      "toNode": "n_perseroan_data_perseroan",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_akta_pendirian_117_sk_kepmen_ahu_0056811",
+      "fromNode": "n_notaris_akta_pendirian_117",
+      "toNode": "n_sk_kepmen_ahu_0056811",
+      "label": "cites [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_tunjung_widhi_wasesa_suwadji_perseroan_data_perseroan",
+      "fromNode": "n_notaris_tunjung_widhi_wasesa_suwadji",
+      "toNode": "n_perseroan_data_perseroan",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_tunjung_widhi_wasesa_suwadji_sk_kepmen_ahu_0056811",
+      "fromNode": "n_notaris_tunjung_widhi_wasesa_suwadji",
+      "toNode": "n_sk_kepmen_ahu_0056811",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_fahri_ramadhan_perseroan_data_perseroan",
+      "fromNode": "n_notaris_fahri_ramadhan",
+      "toNode": "n_perseroan_data_perseroan",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_fahri_ramadhan_sk_kepmen_ahu_0056811",
+      "fromNode": "n_notaris_fahri_ramadhan",
+      "toNode": "n_sk_kepmen_ahu_0056811",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_lukman_alfiansyah_perseroan_data_perseroan",
+      "fromNode": "n_notaris_lukman_alfiansyah",
+      "toNode": "n_perseroan_data_perseroan",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_lukman_alfiansyah_sk_kepmen_ahu_0056811",
+      "fromNode": "n_notaris_lukman_alfiansyah",
+      "toNode": "n_sk_kepmen_ahu_0056811",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_notaris_anggaran_dasar_perseroan_kbli_43905",
+      "fromNode": "n_notaris_anggaran_dasar",
+      "toNode": "n_perseroan_kbli_43905",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_sk_kepmen_ahu_0056811_perseroan_data_perseroan",
+      "fromNode": "n_sk_kepmen_ahu_0056811",
+      "toNode": "n_perseroan_data_perseroan",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_sk_kepmen_ahu_0056811_sk_kementerian_hukum",
+      "fromNode": "n_sk_kepmen_ahu_0056811",
+      "toNode": "n_sk_kementerian_hukum",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_sk_kepmen_ahu_0056811_sk_daftar_perseroan_ahu_0166666",
+      "fromNode": "n_sk_kepmen_ahu_0056811",
+      "toNode": "n_sk_daftar_perseroan_ahu_0166666",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_alamat_kedudukan_depok",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_alamat_kedudukan_depok",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_43905",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_43905",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_49231",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_49231",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_49232",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_49232",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_49295",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_49295",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_52101",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_52101",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_53200",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_53200",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_77100",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_77100",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_77393",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_77393",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_79110",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_79110",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_data_perseroan_perseroan_kbli_95311",
+      "fromNode": "n_perseroan_data_perseroan",
+      "toNode": "n_perseroan_kbli_95311",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_perseroan_kbli_43905_perseroan_kbli_77393",
+      "fromNode": "n_perseroan_kbli_43905",
+      "toNode": "n_perseroan_kbli_77393",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_perseroan_kbli_49231_perseroan_kbli_53200",
+      "fromNode": "n_perseroan_kbli_49231",
+      "toNode": "n_perseroan_kbli_53200",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_perseroan_kbli_49295_perseroan_kbli_77100",
+      "fromNode": "n_perseroan_kbli_49295",
+      "toNode": "n_perseroan_kbli_77100",
+      "label": "semantically_similar_to [INFERRED]"
+    },
+    {
+      "id": "e_favicon_p2t_logo_mark_favicon_blue_gradient_palette",
+      "fromNode": "n_favicon_p2t_logo_mark",
+      "toNode": "n_favicon_blue_gradient_palette",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_favicon_p2t_logo_mark_favicon_delivery_motif",
+      "fromNode": "n_favicon_p2t_logo_mark",
+      "toNode": "n_favicon_delivery_motif",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_favicon_p2t_logo_mark_favicon_p2t_brand",
+      "fromNode": "n_favicon_p2t_logo_mark",
+      "toNode": "n_favicon_p2t_brand",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_favicon_p2t_brand_favicon_delivery_motif",
+      "fromNode": "n_favicon_p2t_brand",
+      "toNode": "n_favicon_delivery_motif",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_favicon_p2t_brand_favicon_blue_gradient_palette",
+      "fromNode": "n_favicon_p2t_brand",
+      "toNode": "n_favicon_blue_gradient_palette",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_logo_web_logo_web_arrow_motif",
+      "fromNode": "n_logo_web",
+      "toNode": "n_logo_web_arrow_motif",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_logo_web_logo_web_blue_branding",
+      "fromNode": "n_logo_web",
+      "toNode": "n_logo_web_blue_branding",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_logo_web_logo_web_p2t_monogram",
+      "fromNode": "n_logo_web",
+      "toNode": "n_logo_web_p2t_monogram",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_logo_web_logo_web_putra_prasetyo_trans",
+      "fromNode": "n_logo_web",
+      "toNode": "n_logo_web_putra_prasetyo_trans",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_logo_web_p2t_monogram_logo_web_putra_prasetyo_trans",
+      "fromNode": "n_logo_web_p2t_monogram",
+      "toNode": "n_logo_web_putra_prasetyo_trans",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_logo_web_putra_prasetyo_trans_logo_web_transport_delivery",
+      "fromNode": "n_logo_web_putra_prasetyo_trans",
+      "toNode": "n_logo_web_transport_delivery",
+      "label": "conceptually_related_to [INFERRED]"
+    },
+    {
+      "id": "e_logo_web_arrow_motif_logo_web_transport_delivery",
+      "fromNode": "n_logo_web_arrow_motif",
+      "toNode": "n_logo_web_transport_delivery",
+      "label": "conceptually_related_to [INFERRED]"
+    }
+  ]
+}

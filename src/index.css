@@ -35,6 +35,7 @@
  */
 :root {
   /* light (default) */
+  color-scheme: light;
   --color-white: #0f172a;
   --color-slate-200: #1e293b;
   --color-slate-300: #334155;
@@ -64,6 +65,7 @@
 }
 
 .dark {
+  color-scheme: dark;
   --color-white: #ffffff;
   --color-slate-200: #e2e8f0;
   --color-slate-300: #cbd5e1;
@@ -96,16 +98,43 @@
   html {
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-ink-900 text-slate-200 font-sans antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    /* Ruang aman untuk poni / gesture bar iPhone & Android */
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
   }
 
   ::selection {
     @apply bg-brand-500/40;
   }
+}
+
+/*
+ * Cegah iOS auto-zoom saat fokus ke input (butuh font >= 16px).
+ * Sengaja TIDAK di dalam @layer agar menang atas utility text-sm Tailwind
+ * (aturan tak-berlayer selalu mengalahkan aturan berlayer).
+ */
+@media (max-width: 640px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* Utilitas safe-area untuk elemen fixed */
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+.pb-safe {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
 }
 
 /* Custom scrollbar */
@@ -146,4 +175,58 @@
 .utility-blur {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+}
+
+/* ---------- Transisi ganti tema ---------- */
+
+/* View Transitions API: reveal melingkar dari posisi tombol (Chromium & Safari 18+) */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+html.vt-theme::view-transition-new(root) {
+  animation: theme-reveal 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 2147483646;
+}
+html.vt-theme::view-transition-old(root) {
+  z-index: 1;
+}
+@keyframes theme-reveal {
+  from {
+    clip-path: circle(0% at var(--tx, 50%) var(--ty, 0%));
+  }
+  to {
+    clip-path: circle(150% at var(--tx, 50%) var(--ty, 0%));
+  }
+}
+
+/* Fallback crossfade untuk browser tanpa View Transitions (mis. Safari lama) */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition:
+    background-color 0.45s ease,
+    border-color 0.45s ease,
+    color 0.35s ease,
+    fill 0.35s ease,
+    stroke 0.35s ease !important;
+}
+
+/* Hormati preferensi kurangi-gerak */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  html.vt-theme::view-transition-new(root) {
+    animation: none;
+  }
 }

@@ -10,6 +10,7 @@ const links = [
   { label: 'Cara Kerja', href: '#cara-kerja' },
   { label: 'Estimasi Ongkir', href: '#estimasi' },
   { label: 'Lacak', href: '#lacak' },
+  { label: 'Profil', href: '#/profil' },
 ]
 
 export function Navbar() {
@@ -24,7 +25,7 @@ export function Navbar() {
   }, [])
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
+    <header className="safe-top fixed inset-x-0 top-0 z-50">
       <div
         className={`mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 transition-all duration-300 sm:px-6 lg:px-8 ${
           scrolled

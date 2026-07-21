@@ -1,44 +1,41 @@
 import { motion } from 'framer-motion'
-import { Star, Quote } from 'lucide-react'
+import { ScrollText, Stamp, FileCheck, ArrowRight } from 'lucide-react'
 import { SectionHeading } from './SectionHeading'
 import { fadeUp, stagger, viewport } from '../lib/motion'
 
 const items = [
   {
-    name: 'Rani Puspita',
-    role: 'Pemilik Toko Furnitur',
-    text: 'Kirim sofa dan lemari ke pelanggan sekarang tinggal pesan Truk Engkel Box. Sampai aman, pelanggan bisa lacak sendiri. Omzet naik!',
-    initials: 'RP',
-    tone: 'from-brand-500 to-accent-500',
+    icon: ScrollText,
+    title: 'Akta Pendirian Resmi',
+    code: 'Akta No. 117 · 2026',
+    text: 'Didirikan melalui akta notaris resmi sebagai Perseroan Terbatas (PT).',
   },
   {
-    name: 'Dimas Aditya',
-    role: 'Manajer Logistik',
-    text: 'Untuk distribusi harian ke banyak toko, fitur multi-titik hemat banget. Satu CDD, sekali jalan, semua tujuan kelar.',
-    initials: 'DA',
-    tone: 'from-violet-500 to-brand-500',
+    icon: Stamp,
+    title: 'Disahkan Kemenkumham',
+    code: 'AHU-0056811.AH.01.01',
+    text: 'Status badan hukum telah disahkan oleh Menteri Hukum Republik Indonesia.',
   },
   {
-    name: 'Sari Melati',
-    role: 'Baru Pindah Rumah',
-    text: 'Pindahan satu rumah cuma sehari. Sopir plus tenaga angkutnya ramah dan cekatan, barang nggak ada yang lecet.',
-    initials: 'SM',
-    tone: 'from-rose-500 to-amber-500',
+    icon: FileCheck,
+    title: 'Terdaftar & Berizin (OSS)',
+    code: 'NIB 1907260010681',
+    text: 'Memiliki Nomor Induk Berusaha melalui sistem OSS Kementerian Investasi/BKPM.',
   },
 ]
 
 export function Testimonials() {
   return (
-    <section id="testimoni" className="relative py-20 sm:py-28">
+    <section id="legalitas" className="relative py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Testimoni"
+          eyebrow="Legalitas"
           title={
             <>
-              Dipercaya ribuan <span className="text-accent-400">pengirim</span>
+              Perusahaan yang <span className="text-accent-400">legal &amp; terpercaya</span>
             </>
           }
-          desc="Cerita nyata dari mereka yang mengandalkan Putra Prasetyo Trans setiap hari."
+          desc="Putra Prasetyo Trans beroperasi dengan legalitas lengkap — bukan sekadar janji, tapi terbukti dokumen resmi negara."
         />
 
         <motion.div
@@ -49,33 +46,35 @@ export function Testimonials() {
           className="mt-14 grid gap-5 md:grid-cols-3"
         >
           {items.map((t) => (
-            <motion.figure
-              key={t.name}
+            <motion.article
+              key={t.title}
               variants={fadeUp}
               className="relative flex flex-col rounded-3xl border border-white/10 bg-ink-800/60 p-6"
             >
-              <Quote className="h-8 w-8 text-brand-500/40" />
-              <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-slate-200">
-                "{t.text}"
-              </blockquote>
-              <div className="mt-5 flex items-center gap-3 border-t border-white/10 pt-5">
-                <span
-                  className={`grid h-11 w-11 place-items-center rounded-full bg-gradient-to-br ${t.tone} text-sm font-bold text-on-brand`}
-                >
-                  {t.initials}
-                </span>
-                <div className="flex-1">
-                  <figcaption className="text-sm font-bold text-white">{t.name}</figcaption>
-                  <p className="text-xs text-slate-400">{t.role}</p>
-                </div>
-                <div className="flex gap-0.5">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-              </div>
-            </motion.figure>
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-gradient-to-br from-brand-500 to-accent-500 text-on-brand">
+                <t.icon className="h-6 w-6" />
+              </span>
+              <h3 className="mt-5 text-lg font-bold text-white">{t.title}</h3>
+              <p className="mt-1 font-mono text-xs font-semibold text-accent-300">{t.code}</p>
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-400">{t.text}</p>
+            </motion.article>
           ))}
+        </motion.div>
+
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewport}
+          className="mt-8 text-center"
+        >
+          <a
+            href="#/profil"
+            className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+          >
+            Lihat profil &amp; dokumen legal lengkap
+            <ArrowRight className="h-4 w-4" />
+          </a>
         </motion.div>
       </div>
     </section>

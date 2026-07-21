@@ -1,0 +1,46 @@
+{
+  "colorGroups": [
+    {
+      "query": "tag:#community/Perizinan_OSS_&_NIB",
+      "color": {
+        "a": 1,
+        "rgb": 5142951
+      }
+    },
+    {
+      "query": "tag:#community/Akta_Pendirian_&_Pengurus",
+      "color": {
+        "a": 1,
+        "rgb": 15896107
+      }
+    },
+    {
+      "query": "tag:#community/Bidang_Usaha_(KBLI)",
+      "color": {
+        "a": 1,
+        "rgb": 14767961
+      }
+    },
+    {
+      "query": "tag:#community/Logo_&_Identitas_Brand",
+      "color": {
+        "a": 1,
+        "rgb": 7780274
+      }
+    },
+    {
+      "query": "tag:#community/Favicon_&_Ikon_Aplikasi",
+      "color": {
+        "a": 1,
+        "rgb": 5873999
+      }
+    },
+    {
+      "query": "tag:#community/Anggaran_Dasar_&_KBLI_Konstruksi",
+      "color": {
+        "a": 1,
+        "rgb": 15583560
+      }
+    }
+  ]
+}

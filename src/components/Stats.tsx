@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import { fadeUp, stagger, viewport } from '../lib/motion'
 
 const stats = [
-  { value: '500+', label: 'Kota terjangkau' },
-  { value: '1 Jt+', label: 'Muatan terkirim' },
-  { value: '5.000+', label: 'Armada mitra' },
-  { value: '99.2%', label: 'Tepat waktu' },
+  { value: 'PT', label: 'Badan hukum resmi' },
+  { value: '2026', label: 'Tahun berdiri' },
+  { value: '10', label: 'Bidang usaha (KBLI)' },
+  { value: 'OSS', label: 'Terdaftar & berizin' },
 ]
 
 export function Stats() {

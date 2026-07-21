@@ -1,57 +1,58 @@
 import { motion } from 'framer-motion'
 import {
   Truck,
-  Home,
-  Route,
-  Building2,
-  CalendarClock,
-  Boxes,
+  PackageCheck,
+  Car,
+  Package,
+  Warehouse,
+  Wrench,
   ArrowUpRight,
 } from 'lucide-react'
 import { SectionHeading } from './SectionHeading'
 import { fadeUp, stagger, viewport } from '../lib/motion'
 
+// Layanan disusun sesuai bidang usaha resmi (KBLI) PT Putra Prasetyo Trans.
 const services = [
   {
     icon: Truck,
-    title: 'Pickup & Truk On-Demand',
-    desc: 'Pesan pickup atau truk kapan saja. Sopir datang menjemput muatan langsung ke lokasimu.',
-    tag: 'Same day',
+    title: 'Angkutan Barang Umum',
+    desc: 'Pengiriman aneka barang antar lokasi dengan armada pickup & truk yang andal dan terawat.',
+    tag: 'KBLI 49231',
     tone: 'from-brand-500/20 to-brand-500/5 text-brand-300',
   },
   {
-    icon: Route,
-    title: 'Kargo Antar Kota',
-    desc: 'Kirim muatan besar ke 500+ kota se-Indonesia dengan tarif transparan & terlacak.',
-    tag: 'Nasional',
+    icon: PackageCheck,
+    title: 'Angkutan Barang Khusus',
+    desc: 'Penanganan muatan yang butuh perlakuan khusus dengan armada dan prosedur yang sesuai.',
+    tag: 'KBLI 49232',
     tone: 'from-accent-500/20 to-accent-500/5 text-accent-300',
   },
   {
-    icon: Home,
-    title: 'Pindahan Rumah & Kantor',
-    desc: 'Furnitur, elektronik, sampai isi satu rumah. Armada box + tenaga angkut siap bantu.',
-    tag: 'Moving',
+    icon: Car,
+    title: 'Angkutan Sewa (Charter)',
+    desc: 'Sewa kendaraan angkut lengkap dengan sopir untuk kebutuhan pengiriman terjadwal Anda.',
+    tag: 'KBLI 49295',
     tone: 'from-violet-500/20 to-violet-500/5 text-violet-300',
   },
   {
-    icon: Boxes,
-    title: 'Multi-Titik Pengantaran',
-    desc: 'Satu truk, banyak tujuan. Distribusi ke beberapa alamat dalam sekali jalan.',
-    tag: 'Efisien',
+    icon: Package,
+    title: 'Layanan Kurir',
+    desc: 'Aktivitas kurir untuk paket dan dokumen — dijemput dari lokasi A, diantar ke B, terlacak.',
+    tag: 'KBLI 53200',
     tone: 'from-rose-500/20 to-rose-500/5 text-rose-300',
   },
   {
-    icon: Building2,
-    title: 'Solusi Bisnis & Kontrak',
-    desc: 'Rekening korporat, tarif khusus, dan armada rutin untuk kebutuhan logistik bisnismu.',
-    tag: 'Bisnis',
+    icon: Wrench,
+    title: 'Sewa Kendaraan & Alat',
+    desc: 'Penyewaan kendaraan bermotor serta mesin & peralatan konstruksi, dengan atau tanpa operator.',
+    tag: 'KBLI 77100 · 77393',
     tone: 'from-amber-500/20 to-amber-500/5 text-amber-300',
   },
   {
-    icon: CalendarClock,
-    title: 'Sewa Harian & Borongan',
-    desc: 'Butuh truk seharian penuh? Sewa borongan dengan sopir untuk proyek atau event.',
-    tag: 'Fleksibel',
+    icon: Warehouse,
+    title: 'Pergudangan',
+    desc: 'Pengelolaan gudang dengan sistem resi gudang untuk mendukung rantai pasok bisnis Anda.',
+    tag: 'KBLI 52101',
     tone: 'from-emerald-500/20 to-emerald-500/5 text-emerald-300',
   },
 ]
@@ -64,10 +65,10 @@ export function Services() {
           eyebrow="Layanan"
           title={
             <>
-              Satu aplikasi untuk semua <span className="text-accent-400">kebutuhan ekspedisi</span>
+              Bidang usaha resmi <span className="text-accent-400">kami</span>
             </>
           }
-          desc="Dari kirim kargo, pindahan, sampai sewa truk borongan — P2T punya armada dan harga yang jujur."
+          desc="Enam layanan inti Putra Prasetyo Trans sesuai izin usaha (KBLI) yang terdaftar — dari angkutan barang, kurir, hingga penyewaan armada & pergudangan."
         />
 
         <motion.div
