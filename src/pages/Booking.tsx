@@ -427,7 +427,7 @@ export function Booking() {
                         }`}
                       >
                         <span
-                          className={`absolute top-0.5 h-5 w-5 rounded-full bg-white transition-all ${
+                          className={`absolute top-0.5 h-5 w-5 rounded-full bg-on-brand transition-all ${
                             data.helper ? 'left-[22px]' : 'left-0.5'
                           }`}
                         />
@@ -499,7 +499,7 @@ export function Booking() {
                           }`}
                         >
                           <span
-                            className={`absolute top-0.5 h-5 w-5 rounded-full bg-white transition-all ${
+                            className={`absolute top-0.5 h-5 w-5 rounded-full bg-on-brand transition-all ${
                               data.insured ? 'left-[22px]' : 'left-0.5'
                             }`}
                           />

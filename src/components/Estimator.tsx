@@ -167,7 +167,7 @@ export function Estimator() {
                   className={`relative h-6 w-11 rounded-full transition-colors ${helper ? 'bg-accent-500' : 'bg-white/15'}`}
                 >
                   <span
-                    className={`absolute top-0.5 h-5 w-5 rounded-full bg-white transition-all ${helper ? 'left-[22px]' : 'left-0.5'}`}
+                    className={`absolute top-0.5 h-5 w-5 rounded-full bg-on-brand transition-all ${helper ? 'left-[22px]' : 'left-0.5'}`}
                   />
                 </span>
               </button>

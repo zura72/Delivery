@@ -56,13 +56,6 @@ function useHashRoute() {
   return hash
 }
 
-const routeFade = {
-  initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -8 },
-  transition: { duration: 0.35, ease: [0.22, 1, 0.36, 1] as const },
-}
-
 export default function App() {
   const hash = useHashRoute()
   const route = hash.startsWith('#/pesan')
@@ -75,23 +68,21 @@ export default function App() {
     if (route !== 'home') window.scrollTo({ top: 0 })
   }, [route])
 
+  // Keyed remount: mengganti route melepas subtree lama & memutar animasi masuk
+  // yang baru. Tanpa AnimatePresence "wait" agar tidak menggantung oleh animasi
+  // loop / AnimatePresence bersarang di dalam halaman.
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      <AnimatePresence mode="wait">
-        {route === 'pesan' && (
-          <motion.div key="pesan" {...routeFade}>
-            <Booking />
-          </motion.div>
-        )}
-
-        {route === 'profil' && (
-          <motion.div key="profil" {...routeFade}>
-            <CompanyProfile />
-          </motion.div>
-        )}
-
+      <motion.div
+        key={route}
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+      >
+        {route === 'pesan' && <Booking />}
+        {route === 'profil' && <CompanyProfile />}
         {route === 'home' && (
-          <motion.div key="home" {...routeFade}>
+          <>
             <Navbar />
             <main>
               <Hero />
@@ -107,9 +98,9 @@ export default function App() {
             </main>
             <Footer />
             <ScrollTop />
-          </motion.div>
+          </>
         )}
-      </AnimatePresence>
+      </motion.div>
     </div>
   )
 }

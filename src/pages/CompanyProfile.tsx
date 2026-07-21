@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import {
   ArrowLeft,
   ArrowUpRight,
@@ -461,7 +461,7 @@ export function CompanyProfile() {
             <div className="relative mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <a
                 href="#/pesan"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3.5 text-sm font-bold text-[#0f172a] shadow-xl transition-transform hover:scale-[1.03] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-on-brand px-6 py-3.5 text-sm font-bold text-[#0f172a] shadow-xl transition-transform hover:scale-[1.03] sm:w-auto"
               >
                 <Truck className="h-4.5 w-4.5" /> Pesan Armada
               </a>
@@ -477,24 +477,21 @@ export function CompanyProfile() {
         </section>
       </main>
 
-      {/* PDF viewer modal */}
-      <AnimatePresence>
-        {viewedDoc && (
+      {/* PDF viewer modal — render bersyarat (unmount bersih saat ditutup) */}
+      {viewedDoc && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="fixed inset-0 z-50 flex flex-col bg-black/70 p-3 backdrop-blur-sm sm:p-6"
+          onClick={() => setViewedDoc(null)}
+        >
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex flex-col bg-black/70 p-3 backdrop-blur-sm sm:p-6"
-            onClick={() => setViewedDoc(null)}
+            initial={{ opacity: 0, scale: 0.96, y: 16 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={(e) => e.stopPropagation()}
+            className="mx-auto flex h-full w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800 shadow-2xl"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.96, y: 16 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.96, y: 16 }}
-              transition={{ duration: 0.25 }}
-              onClick={(e) => e.stopPropagation()}
-              className="mx-auto flex h-full w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-ink-800 shadow-2xl"
-            >
               <div className="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-3">
                 <div className="flex min-w-0 items-center gap-2.5">
                   <FileText className="h-5 w-5 shrink-0 text-accent-400" />
@@ -518,15 +515,14 @@ export function CompanyProfile() {
                   </button>
                 </div>
               </div>
-              <iframe
-                src={viewedDoc.file}
-                title={viewedDoc.nama}
-                className="h-full w-full flex-1 bg-white"
-              />
-            </motion.div>
+            <iframe
+              src={viewedDoc.file}
+              title={viewedDoc.nama}
+              className="h-full w-full flex-1 bg-on-brand"
+            />
           </motion.div>
-        )}
-      </AnimatePresence>
+        </motion.div>
+      )}
     </div>
   )
 }
