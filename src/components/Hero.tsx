@@ -15,8 +15,8 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden pt-32 pb-20 sm:pt-40 lg:pb-28">
       {/* Ambient background */}
       <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-[-10%] h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-brand-600/25 blur-[120px]" />
-        <div className="absolute right-[-10%] top-[20%] h-[360px] w-[360px] rounded-full bg-accent-500/20 blur-[110px]" />
+        <div className="absolute left-1/2 top-[-10%] h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-brand-600/25 blur-[120px] ambient-glow" />
+        <div className="absolute right-[-10%] top-[20%] h-[360px] w-[360px] rounded-full bg-accent-500/20 blur-[110px] ambient-glow" />
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{

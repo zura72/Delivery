@@ -140,8 +140,8 @@ export function CompanyProfile() {
     <div className="relative min-h-screen">
       {/* Ambient bg */}
       <div className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute left-1/2 top-[-12%] h-[460px] w-[760px] -translate-x-1/2 rounded-full bg-brand-600/20 blur-[130px]" />
-        <div className="absolute right-[-12%] bottom-[8%] h-[340px] w-[340px] rounded-full bg-accent-500/12 blur-[120px]" />
+        <div className="absolute left-1/2 top-[-12%] h-[460px] w-[760px] -translate-x-1/2 rounded-full bg-brand-600/20 blur-[130px] ambient-glow" />
+        <div className="absolute right-[-12%] bottom-[8%] h-[340px] w-[340px] rounded-full bg-accent-500/12 blur-[120px] ambient-glow" />
       </div>
 
       {/* Header */}

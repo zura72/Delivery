@@ -15,10 +15,20 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Muat font non-blocking: teks langsung tampil pakai system font, web font menyusul.
+         Mencegah halaman "kosong menunggu font" di jaringan seluler / Safari iPhone. -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
     <meta
       name="description"
       content="PUTRA PRASETYO TRANS (P2T) — Ekspedisi & sewa armada pickup dan truk dari lokasi A ke B. Cepat, aman, terlacak real-time, estimasi ongkir instan."

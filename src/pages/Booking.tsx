@@ -168,8 +168,8 @@ export function Booking() {
     <div className="relative min-h-screen">
       {/* Ambient bg */}
       <div className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute left-1/2 top-[-10%] h-[420px] w-[720px] -translate-x-1/2 rounded-full bg-brand-600/20 blur-[120px]" />
-        <div className="absolute right-[-10%] bottom-[10%] h-[320px] w-[320px] rounded-full bg-accent-500/15 blur-[110px]" />
+        <div className="absolute left-1/2 top-[-10%] h-[420px] w-[720px] -translate-x-1/2 rounded-full bg-brand-600/20 blur-[120px] ambient-glow" />
+        <div className="absolute right-[-10%] bottom-[10%] h-[320px] w-[320px] rounded-full bg-accent-500/15 blur-[110px] ambient-glow" />
       </div>
 
       {/* Header */}
